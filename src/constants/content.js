@@ -65,7 +65,7 @@ export const VEHICLES = [
       'Casco incluido siempre',
       'Seguimiento en tiempo real',
     ],
-    price: 'Desde $2.500 COP',
+    price: 'Desde $3.500 COP',
   },
   {
     type: 'Chivita',

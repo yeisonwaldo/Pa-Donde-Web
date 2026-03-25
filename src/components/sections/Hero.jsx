@@ -92,7 +92,7 @@ const Hero = () => {
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         <div className="grid grid-cols-1 lg:grid-cols-[55%_45%] gap-12 lg:gap-8 items-center">
           {/* Text Content — Left */}
-          <div className="order-2 lg:order-1 text-center lg:text-left">
+          <div className="order-1 lg:order-1 text-center lg:text-left">
             <AnimatedSection delay={0}>
               <Badge>{HERO_CONTENT.badge}</Badge>
             </AnimatedSection>
@@ -168,7 +168,7 @@ const Hero = () => {
           </div>
 
           {/* Phone Mockup — Right */}
-          <div className="order-1 lg:order-2 flex justify-center">
+          <div className="order-2 lg:order-2 flex justify-center">
             <PhoneMockup />
           </div>
         </div>
