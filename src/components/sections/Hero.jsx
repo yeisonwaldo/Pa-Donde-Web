@@ -30,7 +30,7 @@ const FloatingChip = ({ text, className, delay }) => (
 );
 
 const PhoneMockup = () => (
-  <div className="relative w-[220px] sm:w-[240px] lg:w-[270px] mx-auto overflow-visible">
+  <div className="relative w-[220px] sm:w-[240px] lg:w-[270px] mx-auto">
     {/* Phone frame */}
     <motion.div
       initial={{ opacity: 0, x: 40 }}
@@ -51,28 +51,28 @@ const PhoneMockup = () => (
       </div>
     </motion.div>
 
-    {/* Floating cards — hidden on mobile to prevent overflow */}
+    {/* Floating cards */}
     <FloatingCard
       emoji="📍"
       text="Arboletes, Antioquia"
-      className="hidden sm:flex -left-14 top-10"
+      className="-left-6 sm:-left-14 top-6 sm:top-10"
       delay={0}
     />
     <FloatingCard
       emoji="🏍️"
       text="Moto — $3.500 COP"
-      className="hidden sm:flex -right-14 top-28"
+      className="-right-6 sm:-right-14 top-24 sm:top-28"
       delay={0.15}
     />
     <FloatingCard
       emoji="⭐"
       text="4.9 Calificación"
-      className="hidden sm:flex -left-12 bottom-28"
+      className="-left-4 sm:-left-12 bottom-24 sm:bottom-28"
       delay={0.3}
     />
     <FloatingChip
       text="Pedir →"
-      className="hidden sm:block -right-10 bottom-16"
+      className="-right-4 sm:-right-10 bottom-12 sm:bottom-16"
       delay={0.45}
     />
 
