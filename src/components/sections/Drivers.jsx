@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Send, MessageCircle } from 'lucide-react';
+import { Send } from 'lucide-react';
 import AnimatedSection from '../ui/AnimatedSection';
 import Badge from '../ui/Badge';
 import Button from '../ui/Button';
@@ -81,7 +81,7 @@ const Drivers = () => {
                 className="mt-8"
                 onClick={openWhatsApp}
               >
-                <MessageCircle size={18} />
+                <img src="/whatsapp.png" alt="WhatsApp" className="w-5 h-5 object-contain brightness-0 invert" />
                 Quiero ser conductor →
               </Button>
             </AnimatedSection>

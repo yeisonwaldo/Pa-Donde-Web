@@ -168,7 +168,7 @@ export const DOWNLOAD = {
   title: 'Descarga Pa\' Donde',
   titleLine2: 'y empieza a moverte',
   subtitle: 'Gratis, rápido y hecho para Arboletes. Disponible en Android.',
-  whatsappText: '💬 Escríbenos por WhatsApp',
+  whatsappText: 'Escríbenos por WhatsApp',
 };
 
 export const FOOTER = {
@@ -180,7 +180,7 @@ export const FOOTER = {
     { label: 'Datos', href: '#' },
     { label: 'Soporte', href: '#' },
   ],
-  copyright: '© 2025 Pa\' Donde · Arboletes, Antioquia · Colombia',
+  copyright: '© 2026 Pa\' Donde · Arboletes, Antioquia · Colombia',
   socials: [
     { name: 'Instagram', href: '#' },
     { name: 'TikTok', href: '#' },

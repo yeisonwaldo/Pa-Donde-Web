@@ -28,10 +28,8 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
           <a href="#" className="flex items-center gap-2 group">
-            <span className="text-2xl">📍</span>
-            <span className="text-xl font-heading font-extrabold text-navy dark:text-white group-hover:text-primary transition-colors">
-              Pa' Donde
-            </span>
+            <img src="/Logo-02.svg" alt="Pa' Donde icon" className="h-10 w-10" />
+            <img src="/Logo-03.svg" alt="Pa' Donde" className="h-8 dark:invert dark:brightness-1000" />
           </a>
 
           {/* Desktop Nav */}

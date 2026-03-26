@@ -1,4 +1,3 @@
-import { Play, MessageCircle } from 'lucide-react';
 import AnimatedSection from '../ui/AnimatedSection';
 import { DOWNLOAD, DRIVERS } from '../../constants/content';
 
@@ -34,10 +33,10 @@ const Download = () => {
               href="#"
               className="inline-flex items-center justify-center gap-3 glass-card rounded-2xl px-8 py-4 text-white font-bold hover:bg-white/10 transition-all duration-300 hover:-translate-y-1 group"
             >
-              <Play
-                size={24}
-                fill="currentColor"
-                className="text-primary group-hover:scale-110 transition-transform"
+              <img
+                src="/google-play.png"
+                alt="Google Play"
+                className="w-8 h-8 object-contain group-hover:scale-110 transition-transform"
               />
               <div className="text-left">
                 <span className="text-[10px] text-white/50 block uppercase tracking-wider">
@@ -54,7 +53,7 @@ const Download = () => {
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-3 bg-[#25D366] hover:bg-[#20bd5a] rounded-2xl px-8 py-4 text-white font-bold transition-all duration-300 hover:-translate-y-1"
             >
-              <MessageCircle size={20} />
+              <img src="/whatsapp.png" alt="WhatsApp" className="w-6 h-6 object-contain brightness-0 invert" />
               {DOWNLOAD.whatsappText}
             </a>
           </div>

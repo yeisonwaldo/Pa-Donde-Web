@@ -60,7 +60,7 @@ const FAQ = () => {
         <div className="text-center mb-12">
           <AnimatedSection>
             <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-semibold bg-primary/10 text-primary border border-primary/20">
-              ❓ Preguntas frecuentes
+              Preguntas frecuentes
             </span>
           </AnimatedSection>
           <AnimatedSection delay={0.1}>

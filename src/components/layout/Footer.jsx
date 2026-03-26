@@ -21,10 +21,7 @@ const Footer = () => {
           {/* Left */}
           <div>
             <a href="#" className="flex items-center gap-2 mb-4">
-              <span className="text-2xl">📍</span>
-              <span className="text-xl font-heading font-extrabold text-white">
-                Pa' Donde
-              </span>
+              <img src="/Logo-01.svg" alt="Pa' Donde" className="h-20" />
             </a>
             <p className="text-muted text-sm mb-2">{FOOTER.tagline}</p>
             <a

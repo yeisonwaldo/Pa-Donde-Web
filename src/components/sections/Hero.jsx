@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Play, Apple } from 'lucide-react';
+
 import AnimatedSection from '../ui/AnimatedSection';
 import Badge from '../ui/Badge';
 import { HERO_CONTENT } from '../../constants/content';
@@ -128,14 +128,14 @@ const Hero = () => {
                   href="#descargar"
                   className="inline-flex items-center justify-center gap-3 bg-gray-900 dark:bg-white text-white dark:text-navy font-bold py-3.5 px-7 rounded-full hover:bg-black dark:hover:bg-gray-100 transition-all duration-300 hover:-translate-y-0.5 shadow-lg shadow-black/10"
                 >
-                  <Play size={18} fill="currentColor" />
+                  <img src="/android.png" alt="Android" className="h-5 w-5 object-contain invert dark:invert-0" />
                   Android
                 </a>
                 <a
                   href="#descargar"
                   className="inline-flex items-center justify-center gap-3 bg-white dark:bg-transparent border-2 border-gray-900 dark:border-white/20 text-gray-900 dark:text-white font-bold py-3.5 px-7 rounded-full hover:bg-gray-50 dark:hover:border-white/40 transition-all duration-300 hover:-translate-y-0.5"
                 >
-                  <Apple size={18} />
+                  <img src="/apple-logo.png" alt="iOS" className="h-5 w-5 object-contain dark:invert" />
                   iOS
                 </a>
               </div>
