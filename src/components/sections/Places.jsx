@@ -34,7 +34,7 @@ const Places = () => {
         <div className="text-center mb-16">
           <AnimatedSection>
             <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-semibold bg-accent/10 text-accent border border-accent/20">
-              📍 Destinos populares
+              Destinos populares
             </span>
           </AnimatedSection>
           <AnimatedSection delay={0.1}>

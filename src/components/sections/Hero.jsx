@@ -1,8 +1,10 @@
+import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 
 import AnimatedSection from '../ui/AnimatedSection';
 import Badge from '../ui/Badge';
 import { HERO_CONTENT } from '../../constants/content';
+import { supabase } from '../../lib/supabase';
 
 const FloatingCard = ({ emoji, text, className, delay }) => (
   <motion.div
@@ -81,7 +83,38 @@ const PhoneMockup = () => (
   </div>
 );
 
+const getSocialProofText = (count) => {
+  if (count === 0) return 'Sé el primero en registrarte';
+  if (count <= 10) return `${count} personas ya se registraron`;
+  return `Más de ${count} personas esperando`;
+};
+
 const Hero = () => {
+  const [waitlistCount, setWaitlistCount] = useState(0);
+
+  useEffect(() => {
+    const fetchCount = async () => {
+      const { count } = await supabase
+        .from('waitlist')
+        .select('*', { count: 'exact', head: true });
+      setWaitlistCount(count || 0);
+    };
+    fetchCount();
+
+    const channel = supabase
+      .channel('hero_waitlist_count')
+      .on('postgres_changes', {
+        event: 'INSERT',
+        schema: 'public',
+        table: 'waitlist',
+      }, () => {
+        setWaitlistCount(prev => prev + 1);
+      })
+      .subscribe();
+
+    return () => supabase.removeChannel(channel);
+  }, []);
+
   return (
     <section className="relative min-h-screen flex items-center pt-20 pb-12 lg:pb-0 overflow-hidden">
       {/* Background — Light mode: white + grid | Dark mode: navy gradient */}
@@ -161,7 +194,7 @@ const Hero = () => {
                   ))}
                 </div>
                 <p className="text-sm text-gray-400 dark:text-muted">
-                  {HERO_CONTENT.socialProof}
+                  {getSocialProofText(waitlistCount)}
                 </p>
               </div>
             </AnimatedSection>
@@ -178,3 +211,4 @@ const Hero = () => {
 };
 
 export default Hero;
+

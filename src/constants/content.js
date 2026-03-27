@@ -1,12 +1,11 @@
 export const NAV_LINKS = [
   { label: '¿Cómo funciona?', href: '#como-funciona' },
   { label: 'Vehículos', href: '#vehiculos' },
-  { label: 'Conductores', href: '#conductores' },
   { label: 'FAQ', href: '#faq' },
 ];
 
 export const HERO_CONTENT = {
-  badge: '🏍️ App de transporte para Urabá',
+  badge: '• App de transporte para Urabá',
   title: {
     line1: 'Tu viaje en ',
     moto: 'moto',

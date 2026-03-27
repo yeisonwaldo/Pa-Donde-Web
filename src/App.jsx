@@ -5,10 +5,11 @@ import Footer from './components/layout/Footer';
 
 // Lazy load sections below the fold
 const HowItWorks = lazy(() => import('./components/sections/HowItWorks'));
+const Waitlist = lazy(() => import('./sections/Waitlist'));
 const Vehicles = lazy(() => import('./components/sections/Vehicles'));
 const Vision = lazy(() => import('./components/sections/Vision'));
 const Places = lazy(() => import('./components/sections/Places'));
-const Drivers = lazy(() => import('./components/sections/Drivers'));
+// const Drivers = lazy(() => import('./components/sections/Drivers'));
 const Download = lazy(() => import('./components/sections/Download'));
 const FAQ = lazy(() => import('./components/sections/FAQ'));
 
@@ -26,10 +27,10 @@ function App() {
         <Hero />
         <Suspense fallback={<SectionLoader />}>
           <HowItWorks />
+          <Waitlist />
           <Vehicles />
           <Vision />
           <Places />
-          <Drivers />
           <FAQ />
           <Download />
         </Suspense>
