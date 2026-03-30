@@ -2,6 +2,7 @@ import { lazy, Suspense } from 'react';
 import Navbar from './components/layout/Navbar';
 import Hero from './components/sections/Hero';
 import Footer from './components/layout/Footer';
+import { Analytics } from "@vercel/analytics/react";
 
 // Lazy load sections below the fold
 const HowItWorks = lazy(() => import('./components/sections/HowItWorks'));
@@ -36,6 +37,7 @@ function App() {
         </Suspense>
       </main>
       <Footer />
+      <Analytics />
     </div>
   );
 }
