@@ -47,8 +47,7 @@ const PhoneMockup = () => (
 
         {/* Screen — blank placeholder for real app screenshot */}
         <div className="relative bg-white dark:bg-slate-100 aspect-[9/19.5] rounded-[31px] overflow-hidden">
-          {/* Replace this div with an <img> of your real app screenshot */}
-          {/* Example: <img src="/app-screenshot.png" alt="Pa' Donde app" className="w-full h-full object-cover" /> */}
+          <img src="/Screenshot_1.png" alt="Pa' Donde app" className="w-full h-full object-cover" />
         </div>
       </div>
     </motion.div>
@@ -67,8 +66,8 @@ const PhoneMockup = () => (
       delay={0.15}
     />
     <FloatingCard
-      emoji="⭐"
-      text="4.9 Calificación"
+      emoji="😈"
+      text="Ya casi llegamos"
       className="-left-4 sm:-left-12 bottom-24 sm:bottom-28"
       delay={0.3}
     />

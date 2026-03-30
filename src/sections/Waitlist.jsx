@@ -82,7 +82,7 @@ const Waitlist = () => {
 
   const roles = [
     { value: 'passenger', label: 'Soy pasajero' },
-    { value: 'driver',    label: 'Tengo moto/chivita' },
+    { value: 'driver',    label: 'Soy conductor' },
   ];
 
   const avatarEmojis = ['🧑', '👩', '🧔', '👩\u200D🦰', '🧑\u200D🦱'];
@@ -106,7 +106,7 @@ const Waitlist = () => {
           viewport={{ once: true }}
           className="inline-block bg-primary/10 border border-primary/20 text-primary text-xs font-bold uppercase tracking-widest px-4 py-2 rounded-full mb-8"
         >
-          🚀 Próximo lanzamiento
+          Próximo lanzamiento
         </motion.span>
 
         {/* Title */}
@@ -314,12 +314,12 @@ const Waitlist = () => {
                     Guardando...
                   </>
                 ) : (
-                  '🔔 Avísame cuando lancen →'
+                  '🔔 Avísame cuando esté disponible →'
                 )}
               </button>
 
               <p className="text-gray-600 text-xs mt-3">
-                Sin spam. Solo te contactamos cuando lancemos. 🤝
+                Sin spam. Solo te contactamos cuando la lancemos. 🤝
               </p>
             </motion.div>
           )}
