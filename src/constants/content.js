@@ -179,9 +179,9 @@ export const FOOTER = {
     { label: 'Datos', href: '#' },
     { label: 'Soporte', href: '#' },
   ],
-  copyright: '© 2026 Pa\' Donde · Arboletes, Antioquia · Colombia',
+  copyright: '© 2026 · Todos los derechos reservados · Pa\' Donde · Arboletes, Antioquia · Colombia',
   socials: [
-    { name: 'Instagram', href: '#' },
+    { name: 'Instagram', href: 'https://www.instagram.com/padonde_app/' },
     { name: 'TikTok', href: '#' },
     { name: 'Facebook', href: '#' },
   ],

@@ -40,7 +40,7 @@ const Download = () => {
               />
               <div className="text-left">
                 <span className="text-[10px] text-white/50 block uppercase tracking-wider">
-                  Disponible en
+                  Próximamente en
                 </span>
                 <span className="text-base font-bold">Google Play</span>
               </div>

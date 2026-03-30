@@ -11,10 +11,10 @@ const FloatingCard = ({ emoji, text, className, delay }) => (
     initial={{ opacity: 0, scale: 0.8 }}
     animate={{ opacity: 1, scale: 1 }}
     transition={{ delay: 0.6 + delay, duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
-    className={`absolute glass-card rounded-2xl px-4 py-3 flex items-center gap-2 z-10 ${className}`}
+    className={`absolute glass-card dark:bg-slate-900/90 dark:border dark:border-white/10 dark:shadow-xl rounded-[14px] px-3.5 py-2.5 flex items-center gap-2 z-10 ${className}`}
   >
-    <span className="text-lg">{emoji}</span>
-    <span className="text-sm font-semibold text-navy dark:text-white whitespace-nowrap">{text}</span>
+    <span className="text-base">{emoji}</span>
+    <span className="text-[13px] font-semibold text-navy dark:text-white whitespace-nowrap">{text}</span>
   </motion.div>
 );
 
@@ -25,7 +25,7 @@ const FloatingChip = ({ text, className, delay }) => (
     transition={{ delay: 0.6 + delay, duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
     className={`absolute z-10 ${className}`}
   >
-    <div className="bg-primary hover:bg-primary/90 text-white text-sm font-bold px-5 py-2.5 rounded-full shadow-lg shadow-primary/30 cursor-pointer transition-all duration-300 hover:-translate-y-0.5">
+    <div className="bg-primary hover:bg-primary/90 text-white text-[13px] font-bold px-4 py-2 rounded-full shadow-lg shadow-primary/30 cursor-pointer transition-all duration-300 hover:-translate-y-0.5">
       {text}
     </div>
   </motion.div>
@@ -187,7 +187,7 @@ const Hero = () => {
                       className={`w-8 h-8 rounded-full ${bg} border-2 border-white dark:border-navy flex items-center justify-center`}
                     >
                       <span className="text-[10px] font-bold text-white">
-                        {['J', 'M', 'A'][i]}
+                        {['C', 'B', 'A'][i]}
                       </span>
                     </div>
                   ))}
