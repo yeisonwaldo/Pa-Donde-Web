@@ -126,7 +126,7 @@ export const DRIVERS = {
     { emoji: '🤝', text: 'Somos de aquí, para los nuestros' },
   ],
   cities: ['Arboletes', 'Necoclí', 'San Juan de Urabá', 'Turbo', 'Apartadó'],
-  whatsappNumber: '573001234567',
+  whatsappNumber: '573006233026',
   whatsappMessage: 'Hola, quiero ser conductor en Pa\' Donde 🏍️',
 };
 
@@ -174,10 +174,10 @@ export const FOOTER = {
     { label: 'Datos', href: '#' },
     { label: 'Soporte', href: '#' },
   ],
-  copyright: '© 2026 · Todos los derechos reservados · Pa\' Donde · Arboletes, Antioquia · Colombia',
+  copyright: '© 2026 · Todos los derechos reservados · Digitara ·  Pa\' Donde · Arboletes, Antioquia · Colombia',
   socials: [
     { name: 'Instagram', href: 'https://www.instagram.com/padonde_app/' },
-    { name: 'TikTok', href: '#' },
-    { name: 'Facebook', href: '#' },
+    { name: 'TikTok', href: 'https://www.tiktok.com/@padonde_app' },
+    { name: 'Facebook', href: 'https://www.facebook.com/padonde_app' },
   ],
 };
