@@ -61,7 +61,7 @@ export const VEHICLES = [
     features: [
       'Llegada en menos de 5 minutos',
       'Ideal para viajes rápidos',
-      'Casco incluido siempre',
+      'Conductores de confianza',
       'Seguimiento en tiempo real',
     ],
     price: 'Desde $3.500 COP',
@@ -72,12 +72,12 @@ export const VEHICLES = [
     theme: 'green',
     tagline: 'Hasta 3 pasajeros · Más espacio · Ideal para familias',
     features: [
-      'Espacio para equipaje',
+      'Sube mercado o maletas',
       'Perfecto para familias',
-      'Techado y cómodo',
+      'Vas cómodo y cubierto',
       'Apto para recorridos largos',
     ],
-    price: 'Desde $4.000 COP',
+    price: 'Desde $4.500 COP',
   },
 ];
 
@@ -109,9 +109,9 @@ export const PLACES = {
   items: [
     { emoji: '🌋', name: 'Volcán de Lodo', description: 'Atracción natural única en el mundo', tag: 'Turismo' },
     { emoji: '🏖️', name: 'Playa Principal', description: 'El corazón costero de Arboletes', tag: 'Playa' },
-    { emoji: '⚓', name: 'Muelle Turístico', description: 'Punto de partida para aventuras marinas', tag: 'Turismo' },
+    { emoji: '⚓', name: 'Muelle Turístico', description: 'Disfruta de la flor del paraíso y el faro', tag: 'Turismo' },
     { emoji: '🏛️', name: 'Parque Principal', description: 'Centro de la vida social y cultural', tag: 'Centro' },
-    { emoji: '🛒', name: 'Plaza de Mercado', description: 'Frutas frescas y sabor local', tag: 'Comercio' },
+    { emoji: '🛒', name: 'Plaza de Mercado', description: 'Proximamente abierto al público', tag: 'Comercio' },
     { emoji: '🏥', name: 'Hospital Municipal', description: 'Atención médica para toda la comunidad', tag: 'Salud' },
   ],
 };
@@ -139,17 +139,12 @@ export const FAQ_ITEMS = [
   {
     question: '¿Es seguro usar Pa\' Donde?',
     answer:
-      'Sí. Todos los conductores son verificados con documento de identidad, licencia de conducción y seguro obligatorio. Además, puedes compartir tu viaje en tiempo real con tus contactos de confianza.',
+      'Sí. Todos los conductores son verificados con documento de identidad. Además, puedes compartir tu viaje en tiempo real con tus contactos de confianza.',
   },
   {
     question: '¿En qué ciudades funciona?',
     answer:
       'Estamos lanzando en Arboletes, Antioquia. Próximamente nos expandiremos a Necoclí, San Juan de Urabá, Turbo y otros municipios del Urabá.',
-  },
-  {
-    question: '¿Cómo se calcula la tarifa?',
-    answer:
-      'La tarifa se basa en la distancia del recorrido. Antes de confirmar tu viaje, siempre verás el precio estimado. Sin sorpresas.',
   },
   {
     question: '¿Puedo cancelar un viaje?',

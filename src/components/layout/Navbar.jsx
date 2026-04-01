@@ -29,7 +29,7 @@ const Navbar = () => {
           {/* Logo */}
           <a href="#" className="flex items-center gap-2 group">
             <img src="/Logo-02.svg" alt="Pa' Donde icon" className="h-10 w-10" />
-            <img src="/Logo-03.svg" alt="Pa' Donde" className="h-8 dark:invert dark:brightness-1000" />
+            <img src="/Logo-03.svg" alt="Pa' Donde" className="h-8 dark:brightness-0 dark:invert" />
           </a>
 
           {/* Desktop Nav */}
